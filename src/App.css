@@ -1,0 +1,132 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./img/Untitled\ design.png');
+  background-size: cover;
+}
+
+.todo-app {
+  background-color: rgba(255, 255, 255, 0.65);
+  padding: 20px;
+  border-radius: 13px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 22.5rem;
+  height: 25rem;
+  transition: 0.3s ease-in-out;
+}
+
+.todo-app h1 {
+  cursor: pointer;
+}
+
+.task-input {
+  display: flex;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+  width: 22.25rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.07), 0 6px 22px 0 rgba(0, 0, 0, 0.1);
+}
+
+.task-input input {
+  padding: 8px;
+  font-size: 16px;
+  width: 18rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.task-input button {
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  width: 3.25rem;
+  transition: 0.2s ease-in-out;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.task-input button:hover {
+  background-color: #37943a;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  transition: 0.3s ease-in-out;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 8px;
+  margin-bottom: 17.5px;
+  border-radius: 7px;
+  width: 22.2rem;
+  height: 1.5rem;
+  transition: margin-bottom 0.3s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 22px 0 rgba(0, 0, 0, 0.08);
+  padding:0;
+  height: 2.25rem;
+}
+
+li button {
+  cursor: pointer;
+  background-color: white;
+  color: #ff4d4d;
+  border: none;
+  padding: 6px;
+  border-radius: 4px;
+  width: 3.2rem;
+  font-size: 12.5px;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+  height: 2.25rem;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+li button:hover {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+li:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.07), 0 6px 22px 0 rgba(0, 0, 0, 0.1);
+}
+
+li input[type="checkbox"] {
+  margin-right: 8px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  margin-left: 0.75rem;
+}
+
+li input[type="checkbox"]:checked {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
